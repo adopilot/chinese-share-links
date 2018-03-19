@@ -14,5 +14,15 @@ export default {
       popupHeight: 480,
       popupWidth: 1120
     });
+	 Sharing.addSource({
+      id: 'kasaProblem',
+      faIcon: 'fa-cart-plus',
+      generateUrl(link, title) {
+        return "http://core.rgt.ba/ProblemiKasa/Create?url=" + encodeURIComponent(link);
+      },
+      shouldOpenInPopup: true,
+      popupHeight: 600,
+      popupWidth: 800
+    });
   }
 }
