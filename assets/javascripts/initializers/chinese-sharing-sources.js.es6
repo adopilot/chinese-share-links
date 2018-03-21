@@ -24,5 +24,15 @@ export default {
       popupHeight: 600,
       popupWidth: 800
     });
+	 Sharing.addSource({
+      id: 'kasaProblemClose',
+      faIcon: 'fa-cart-arrow-down',
+      generateUrl(link, title) {
+        return "http://core.rgt.ba/ProblemiKasa/Zatvori?url=" + encodeURIComponent(link);
+      },
+      shouldOpenInPopup: true,
+      popupHeight: 600,
+      popupWidth: 800
+    });
   }
 }
