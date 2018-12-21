@@ -16,7 +16,7 @@ export default {
     });
 	 Sharing.addSource({
       id: 'kasaProblem',
-      faIcon: 'fas fa-cart-plus',
+      faIcon: 'fa-cart-plus',
       generateUrl(link, title) {
         return "http://core.rgt.ba/ProblemiKasa/Create?url=" + encodeURIComponent(link);
       },
@@ -26,7 +26,7 @@ export default {
     });
 	 Sharing.addSource({
       id: 'kasaProblemClose',
-      faIcon: 'fas fa-cart-arrow-down',
+      faIcon: 'fa-cart-arrow-down',
       generateUrl(link, title) {
         return "http://core.rgt.ba/ProblemiKasa/Zatvori?url=" + encodeURIComponent(link);
       },
