@@ -1,9 +1,10 @@
-import Sharing from 'discourse/lib/sharing';
+import { withPluginApi } from "discourse/lib/plugin-api";
 
 export default {
   name: 'it-mjerenje',
 
   initialize() {
+	  
     Sharing.addSource({
       id: 'utroseniSati',
       faIcon: 'fa-check',
